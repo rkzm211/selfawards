@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>2026 셀프 시상식 | 나에게 내가 주는 상</title>
-<meta name="description" content="2026년을 돌아보며 나에게 꼭 맞는 상을 정하고 스스로에게 건네는 연말 시상식, 셀프 시상식. KT&amp;G 상상마당 부산에서 열립니다.">
+<meta name="description" content="2026년 11월 13일(금)·14일(토), KT&amp;G 상상마당 부산 1층. 올해의 나를 돌아보고 나에게 꼭 맞는 상을 스스로에게 건네는 셀프 시상식. 참가비 10,000원.">
 <meta name="theme-color" content="#05081a">
 <meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://rkzm211.github.io/selfawards/">
@@ -13,12 +13,12 @@
 <meta property="og:image" content="https://rkzm211.github.io/selfawards/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="2026 셀프 시상식 — 트로피와 SELF YEAR AWARDS 글자, KT&amp;G 상상마당 부산">
+<meta property="og:image:alt" content="2026 셀프 시상식, 11월 13일–14일 KT&amp;G 상상마당 부산 1층">
 <meta name="twitter:image" content="https://rkzm211.github.io/selfawards/assets/og.jpg">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="셀프 시상식">
 <meta property="og:title" content="2026 셀프 시상식 — 나에게 내가 주는 상">
-<meta property="og:description" content="올해의 나를 돌아보고, 나에게 꼭 맞는 상을 건네는 연말 시상식. KT&amp;G 상상마당 부산.">
+<meta property="og:description" content="11. 13.(금) 19:00–21:00 · 11. 14.(토) 13:00–17:00 | KT&amp;G 상상마당 부산 1층 | 참가비 10,000원">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -65,7 +65,7 @@
 
   /* ---------- hero: the poster, alive ---------- */
   .hero {
-    --w: min(100vw, 620px, calc(64vh * .8435));   /* art width; text sizes follow it */
+    --w: min(100vw, 620px, calc(58vh * .9481));   /* art width (art is 1024x1080); text sizes follow it */
     position: relative;
     text-align: center;
     padding: 0 0 clamp(64px, 10vh, 112px);
@@ -75,7 +75,7 @@
     overflow: hidden;
   }
   @supports (height: 1svh) {
-    .hero { --w: min(100vw, 620px, calc(64svh * .8435)); }
+    .hero { --w: min(100vw, 620px, calc(58svh * .9481)); }
   }
   .art {
     position: relative;
@@ -111,12 +111,24 @@
   }
   .title { margin: .55em auto 0; width: min(86vw, calc(var(--w) * .78)); }
   .title img { width: 100%; height: auto; }
+  .dates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7em;
+    margin: .95em 0 0;
+    font: 700 max(21px, calc(var(--w) * .058))/1 var(--serif);
+    color: var(--ivory);
+    letter-spacing: .02em;
+  }
+  .dates small { margin-left: .2em; font-size: .62em; color: var(--gold); letter-spacing: 0; }
+  .dates i { display: block; width: 2.6em; height: 1px; background: rgba(244, 237, 224, .7); }
   .meta {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 4px 14px;
-    margin: 22px 0 0;
+    margin: 16px 0 0;
     font-size: 15px;
     color: var(--mist);
     letter-spacing: -.01em;
@@ -170,13 +182,6 @@
     border: 1px solid rgba(216, 180, 106, .55);
   }
   .btn-line:hover { background: rgba(216, 180, 106, .08); }
-  .btn-soon {
-    margin-bottom: 0;
-    color: var(--gold);
-    background: rgba(216, 180, 106, .06);
-    border: 1px dashed rgba(216, 180, 106, .5);
-    cursor: default;
-  }
 
   /* ---------- shared section rhythm ---------- */
   .section { padding: clamp(72px, 11vw, 136px) 20px; }
@@ -319,7 +324,7 @@
   .invite {
     position: relative;
     margin-top: 40px;
-    padding: 34px clamp(22px, 5vw, 48px) 40px;
+    padding: 20px clamp(22px, 5vw, 48px) 20px;
     background: linear-gradient(180deg, rgba(20, 32, 78, .55), rgba(12, 20, 52, .55));
     border: 1px solid rgba(216, 180, 106, .5);
     box-shadow: inset 0 0 0 6px var(--midnight), inset 0 0 0 7px rgba(216, 180, 106, .22);
@@ -332,12 +337,22 @@
     padding: 18px 0;
     border-bottom: 1px solid rgba(244, 237, 224, .09);
   }
+  .fact:last-child { border-bottom: 0; }
   .fact dt { font: 700 16px/1.6 var(--serif); color: var(--gold); letter-spacing: .08em; }
   .fact dd { margin: 0; font-size: 17px; line-height: 1.6; }
+  .when { display: block; font-variant-numeric: tabular-nums; }
+  .when + .when { margin-top: 4px; }
+  .tel {
+    color: var(--ivory);
+    font-variant-numeric: tabular-nums;
+    text-decoration-color: rgba(216, 180, 106, .7);
+    text-underline-offset: 4px;
+  }
   .tbd { color: var(--mist); }
   .map {
-    display: inline-block;
-    margin-left: 8px;
+    display: block;
+    width: max-content;
+    margin-top: 2px;
     font-size: 14px;
     color: var(--gold);
     text-underline-offset: 3px;
@@ -356,17 +371,7 @@
     color: var(--ivory);
   }
   .closing em { font-style: normal; color: var(--gold); }
-  .logos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 28px 44px;
-    margin-top: 56px;
-  }
-  .logos .ktng { height: 40px; width: auto; }
-  .logos .cd { height: 26px; width: auto; }
-  .fine { margin: 40px 0 0; font-size: 13px; color: #6f7590; }
+  .fine { margin: 44px 0 0; font-size: 13px; color: #6f7590; }
   .fine a { text-underline-offset: 3px; }
 
   /* ---------- load sequence ---------- */
@@ -375,7 +380,7 @@
     .vlabel { animation: fade 1.2s .7s both; }
     .kicker { animation: up .9s .35s cubic-bezier(.2, .7, .2, 1) both; }
     .title  { animation: up 1s .5s cubic-bezier(.2, .7, .2, 1) both; }
-    .meta, .actions { animation: up .9s .7s cubic-bezier(.2, .7, .2, 1) both; }
+    .dates, .meta, .actions { animation: up .9s .7s cubic-bezier(.2, .7, .2, 1) both; }
   }
   @keyframes rise-in { from { opacity: 0; transform: translateY(14px) scale(1.015); } to { opacity: 1; transform: none; } }
   @keyframes up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
@@ -406,7 +411,7 @@
     <div class="art">
       <picture>
         <source srcset="assets/hero-art.webp" type="image/webp">
-        <img src="assets/hero-art.jpg" width="1024" height="1214" fetchpriority="high"
+        <img src="assets/hero-art.jpg" width="1024" height="1080" fetchpriority="high"
              alt="원반을 머리 위로 들어 올린 황금 여신상 트로피 뒤로 SELF YEAR AWARDS 입체 글자가 펼쳐진 포스터 그림">
       </picture>
       <p class="vlabel" aria-hidden="true">
@@ -419,7 +424,11 @@
         <span class="sr-only">셀프 시상식</span>
         <img src="assets/title.svg" width="721" height="140" alt="" aria-hidden="true">
       </h1>
-      <p class="meta"><span class="tbd">일정 추후 안내</span><span>KT&amp;G 상상마당 부산</span></p>
+      <p class="dates">
+        <span class="sr-only">2026년 11월 13일 금요일, 14일 토요일</span>
+        <span aria-hidden="true">11. 13.<small>금</small></span><i aria-hidden="true"></i><span aria-hidden="true">11. 14.<small>토</small></span>
+      </p>
+      <p class="meta"><span>KT&amp;G 상상마당 부산 1층</span></p>
       <div class="actions">
         <a class="btn btn-gold" href="#info">행사 안내 보기</a>
         <a class="btn btn-line" href="#about">어떤 시상식인가요?</a>
@@ -445,7 +454,7 @@
           <p class="cert-award swap" data-k="award">올해의 버팀상</p>
           <p class="cert-name"><span>성명</span><span>나</span></p>
           <p class="cert-body swap">위 사람은 2026년 한 해 동안 <span data-k="reason">힘든 날에도 끝까지 버텨 내며 하루하루를 살아냈으므로</span> 스스로에게 이&nbsp;상장을 수여합니다.</p>
-          <p class="cert-date">2026년 12월</p>
+          <p class="cert-date">2026년 11월</p>
           <p class="cert-giver"><small>셀프 시상식</small>수여자 나
             <svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
               <defs>
@@ -479,14 +488,12 @@
       <h2 class="h2" id="info-title">행사 안내</h2>
       <div class="invite">
         <dl class="facts">
-          <div class="fact"><dt>일시</dt><dd class="tbd">추후 안내</dd></div>
-          <div class="fact"><dt>장소</dt><dd>KT&amp;G 상상마당 부산<a class="map" href="https://map.naver.com/p/search/KT%26G%20%EC%83%81%EC%83%81%EB%A7%88%EB%8B%B9%20%EB%B6%80%EC%82%B0" target="_blank" rel="noopener">지도 보기</a></dd></div>
-          <div class="fact"><dt>대상</dt><dd class="tbd">추후 안내</dd></div>
-          <div class="fact"><dt>참가비</dt><dd class="tbd">추후 안내</dd></div>
-          <div class="fact"><dt>문의</dt><dd class="tbd">추후 안내</dd></div>
+          <div class="fact"><dt>일시</dt><dd><span class="when">11. 13.(금) 19:00 – 21:00</span><span class="when">11. 14.(토) 13:00 – 17:00</span></dd></div>
+          <div class="fact"><dt>장소</dt><dd>KT&amp;G 상상마당 부산 1층<a class="map" href="https://map.naver.com/p/search/KT%26G%20%EC%83%81%EC%83%81%EB%A7%88%EB%8B%B9%20%EB%B6%80%EC%82%B0" target="_blank" rel="noopener">지도 보기</a></dd></div>
+          <div class="fact"><dt>참가비</dt><dd>10,000원</dd></div>
+          <div class="fact"><dt>문의</dt><dd><a class="tel" href="tel:010-9318-5346">010-9318-5346</a></dd></div>
         </dl>
-        <!-- 신청 링크가 생기면: <a class="btn btn-gold" id="apply" href="신청주소" target="_blank" rel="noopener">참가 신청하기</a> -->
-        <p class="btn btn-soon" id="apply">신청 오픈 예정</p>
+        <!-- 신청 링크가 생기면 여기에: <a class="btn btn-gold" id="apply" href="신청주소" target="_blank" rel="noopener">참가 신청하기</a> -->
       </div>
     </div>
   </section>
@@ -494,10 +501,6 @@
 
 <footer class="footer">
   <p class="closing">올해 가장 애쓴 사람에게<br><em>상을 줄 차례</em>입니다</p>
-  <div class="logos">
-    <img class="ktng" src="assets/logo-ktng.png" width="520" height="210" alt="KT&amp;G">
-    <img class="cd" src="assets/logo-cd.png" width="620" height="130" alt="콘텐츠개발원">
-  </div>
   <p class="fine">© 2026 셀프 시상식 · <a href="assets/poster.jpg" target="_blank" rel="noopener">포스터 원본 보기</a></p>
 </footer>
 
