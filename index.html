@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026 셀프 시상식 | 나에게 내가 주는 상</title>
+<meta name="description" content="2026년을 돌아보며 나에게 꼭 맞는 상을 정하고 스스로에게 건네는 연말 시상식, 셀프 시상식. KT&amp;G 상상마당 부산에서 열립니다.">
+<meta name="theme-color" content="#05081a">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://rkzm211.github.io/selfawards/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rkzm211.github.io/selfawards/">
+<meta property="og:image" content="https://rkzm211.github.io/selfawards/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="2026 셀프 시상식 — 트로피와 SELF YEAR AWARDS 글자, KT&amp;G 상상마당 부산">
+<meta name="twitter:image" content="https://rkzm211.github.io/selfawards/assets/og.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="셀프 시상식">
+<meta property="og:title" content="2026 셀프 시상식 — 나에게 내가 주는 상">
+<meta property="og:description" content="올해의 나를 돌아보고, 나에게 꼭 맞는 상을 건네는 연말 시상식. KT&amp;G 상상마당 부산.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/hero-art.webp" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --midnight: #05081a;   /* page */
+    --ink: #0c1434;        /* raised panel */
+    --ribbon: #2b4a8f;     /* blue of the 3D letters */
+    --gold: #d8b46a;       /* trophy gold */
+    --gold-hi: #f2d796;
+    --gold-lo: #9c7434;
+    --ivory: #f4ede0;      /* title */
+    --mist: #a3a9c2;       /* muted text */
+    --paper: #f7f0e1;      /* certificate */
+    --paper-ink: #1d2340;
+    --seal: #c63b2e;
+    --serif: 'Nanum Myeongjo', 'Noto Serif KR', 'AppleMyungjo', serif;
+    --sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--midnight);
+    color: var(--ivory);
+    font: 400 16px/1.7 var(--sans);
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 4px; border-radius: 2px; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+
+  /* ---------- hero: the poster, alive ---------- */
+  .hero {
+    --w: min(100vw, 620px, calc(64vh * .8435));   /* art width; text sizes follow it */
+    position: relative;
+    text-align: center;
+    padding: 0 0 clamp(64px, 10vh, 112px);
+    background:
+      radial-gradient(70% 55% at 50% 38%, rgba(43, 74, 143, .30), transparent 72%),
+      linear-gradient(180deg, #0b1131 0%, var(--midnight) 78%);
+    overflow: hidden;
+  }
+  @supports (height: 1svh) {
+    .hero { --w: min(100vw, 620px, calc(64svh * .8435)); }
+  }
+  .art {
+    position: relative;
+    width: var(--w);
+    margin: 0 auto;
+  }
+  .art img { width: 100%; height: auto; }
+  .vlabel {
+    --vs: max(10px, calc(var(--w) * .021));
+    position: absolute;
+    left: 3.4%;
+    top: 5.4%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .9em;
+    font: 400 var(--vs)/1 var(--serif);
+    letter-spacing: .28em;
+    color: #c9ab72;
+  }
+  .vlabel span { writing-mode: vertical-rl; }
+  .vlabel i { display: block; width: 1px; background: currentColor; }
+  .vlabel .bar { height: .9em; opacity: .9; }
+  .vlabel .line { height: 7em; opacity: .55; }
+
+  .hero-text { position: relative; padding: 0 20px; }
+  .kicker {
+    margin: calc(var(--w) * .004) 0 0;
+    font: 700 max(15px, calc(var(--w) * .029))/1.3 var(--serif);
+    letter-spacing: .16em;
+    color: var(--gold);
+  }
+  .title { margin: .55em auto 0; width: min(86vw, calc(var(--w) * .78)); }
+  .title img { width: 100%; height: auto; }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 14px;
+    margin: 22px 0 0;
+    font-size: 15px;
+    color: var(--mist);
+    letter-spacing: -.01em;
+  }
+  .meta span + span::before {
+    content: "";
+    display: inline-block;
+    width: 3px; height: 3px;
+    margin: 0 14px 0 0;
+    vertical-align: middle;
+    background: var(--gold);
+    transform: rotate(45deg);
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    min-height: 52px;
+    padding: 0 28px;
+    border-radius: 3px;
+    font: 700 16px/1 var(--sans);
+    letter-spacing: -.01em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+  }
+  .btn-gold {
+    color: #0b1230;
+    border: 0;
+    background: linear-gradient(180deg, var(--gold-hi) 0%, #d6af62 52%, #b38a43 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .55), 0 10px 30px -12px rgba(216, 180, 106, .75);
+  }
+  .btn-gold:hover { transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .55), 0 14px 34px -12px rgba(216, 180, 106, .9); }
+  .btn-line {
+    color: var(--ivory);
+    background: transparent;
+    border: 1px solid rgba(216, 180, 106, .55);
+  }
+  .btn-line:hover { background: rgba(216, 180, 106, .08); }
+  .btn-soon {
+    margin-bottom: 0;
+    color: var(--gold);
+    background: rgba(216, 180, 106, .06);
+    border: 1px dashed rgba(216, 180, 106, .5);
+    cursor: default;
+  }
+
+  /* ---------- shared section rhythm ---------- */
+  .section { padding: clamp(72px, 11vw, 136px) 20px; }
+  .wrap { max-width: 1040px; margin: 0 auto; }
+  .h2 {
+    margin: 0;
+    font: 800 clamp(28px, 5.6vw, 42px)/1.32 var(--serif);
+    letter-spacing: -.01em;
+    color: var(--ivory);
+    text-wrap: balance;
+  }
+  .ornament {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 148px;
+    margin: 0 0 26px;
+    color: var(--gold);
+  }
+  .ornament::before, .ornament::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, currentColor);
+  }
+  .ornament::after { background: linear-gradient(90deg, currentColor, transparent); }
+  .ornament b { width: 6px; height: 6px; background: currentColor; transform: rotate(45deg); }
+
+  /* ---------- 상장 ---------- */
+  .concept { background: linear-gradient(180deg, var(--midnight), #080d28 60%, var(--midnight)); }
+  .concept .wrap {
+    display: grid;
+    gap: 48px;
+    align-items: center;
+  }
+  .lede { margin: 20px 0 0; color: var(--mist); font-size: 17px; line-height: 1.85; }
+  .lede strong { color: var(--ivory); font-weight: 600; }
+  .shuffle {
+    display: flex;
+    width: max-content;
+    margin: 34px auto 0;
+    font-size: 15px;
+    min-height: 46px;
+    padding: 0 20px;
+  }
+  .shuffle[hidden] { display: none; }
+  .shuffle svg { width: 17px; height: 17px; }
+
+  .cert-stage { min-width: 0; }
+  .cert {
+    position: relative;
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 46px 34px 40px;
+    color: var(--paper-ink);
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .36 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+      radial-gradient(120% 90% at 50% 0%, #fbf6ea 0%, var(--paper) 55%, #ece1c8 100%);
+    box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .85), 0 0 0 1px rgba(0, 0, 0, .2);
+    transform: rotate(-1.2deg);
+  }
+  .cert::before, .cert::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+  .cert::before { inset: 11px; border: 1.6px solid #b8914a; }
+  .cert::after { inset: 16px; border: .8px solid rgba(184, 145, 74, .55); }
+  .cert-no {
+    margin: 0;
+    font: 400 13px/1 var(--serif);
+    color: #6d6a72;
+    letter-spacing: .04em;
+  }
+  .cert-head {
+    margin: 22px 0 0;
+    text-align: center;
+    font: 800 clamp(34px, 9vw, 46px)/1 var(--serif);
+    letter-spacing: .9em;
+    text-indent: .9em;
+  }
+  .cert-award {
+    margin: 30px 0 0;
+    text-align: center;
+    font: 800 clamp(23px, 6.2vw, 30px)/1.25 var(--serif);
+    color: #7f5a1c;
+    letter-spacing: .02em;
+  }
+  .cert-name {
+    display: flex;
+    justify-content: center;
+    gap: 1.6em;
+    margin: 18px 0 0;
+    font: 700 17px/1 var(--serif);
+    letter-spacing: .3em;
+  }
+  .cert-body {
+    margin: 26px 0 0;
+    font: 400 16.5px/2 var(--serif);
+    text-align: center;
+    text-wrap: pretty;
+  }
+  .cert-date {
+    margin: 26px 0 0;
+    text-align: center;
+    font: 700 16px/1 var(--serif);
+    letter-spacing: .12em;
+  }
+  .cert-giver {
+    position: relative;
+    width: max-content;
+    margin: 22px auto 0;
+    font: 800 19px/1 var(--serif);
+    letter-spacing: .14em;
+  }
+  .cert-giver small { font-size: 14px; font-weight: 700; letter-spacing: .1em; margin-right: .5em; }
+  .seal {
+    position: absolute;
+    right: -58px;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    mix-blend-mode: multiply;
+    transform: rotate(-9deg);
+  }
+  .swap { transition: opacity .28s ease; }
+  .cert.is-changing .swap { opacity: 0; }
+  .cert.is-stamping .seal { animation: stamp .5s cubic-bezier(.2, .9, .3, 1.2) both; }
+  @keyframes stamp {
+    0%   { opacity: 0; transform: rotate(-9deg) scale(1.6); }
+    60%  { opacity: 1; transform: rotate(-9deg) scale(.94); }
+    100% { opacity: 1; transform: rotate(-9deg) scale(1); }
+  }
+
+  /* ---------- 행사 안내 ---------- */
+  .info .wrap { max-width: 680px; }
+  .info .ornament { margin-left: auto; margin-right: auto; }
+  .info .h2 { text-align: center; }
+  .invite {
+    position: relative;
+    margin-top: 40px;
+    padding: 34px clamp(22px, 5vw, 48px) 40px;
+    background: linear-gradient(180deg, rgba(20, 32, 78, .55), rgba(12, 20, 52, .55));
+    border: 1px solid rgba(216, 180, 106, .5);
+    box-shadow: inset 0 0 0 6px var(--midnight), inset 0 0 0 7px rgba(216, 180, 106, .22);
+  }
+  .facts { margin: 0; }
+  .fact {
+    display: grid;
+    grid-template-columns: 4.6em 1fr;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(244, 237, 224, .09);
+  }
+  .fact dt { font: 700 16px/1.6 var(--serif); color: var(--gold); letter-spacing: .08em; }
+  .fact dd { margin: 0; font-size: 17px; line-height: 1.6; }
+  .tbd { color: var(--mist); }
+  .map {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 14px;
+    color: var(--gold);
+    text-underline-offset: 3px;
+  }
+  .invite .btn { width: 100%; margin-top: 32px; }
+
+  /* ---------- footer ---------- */
+  .footer {
+    padding: clamp(72px, 10vw, 120px) 20px calc(40px + env(safe-area-inset-bottom));
+    text-align: center;
+    background: radial-gradient(60% 70% at 50% 100%, rgba(43, 74, 143, .22), transparent 70%);
+  }
+  .closing {
+    margin: 0;
+    font: 800 clamp(24px, 5vw, 34px)/1.45 var(--serif);
+    color: var(--ivory);
+  }
+  .closing em { font-style: normal; color: var(--gold); }
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 28px 44px;
+    margin-top: 56px;
+  }
+  .logos .ktng { height: 40px; width: auto; }
+  .logos .cd { height: 26px; width: auto; }
+  .fine { margin: 40px 0 0; font-size: 13px; color: #6f7590; }
+  .fine a { text-underline-offset: 3px; }
+
+  /* ---------- load sequence ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .art img { animation: rise-in 1.4s cubic-bezier(.2, .7, .2, 1) both; }
+    .vlabel { animation: fade 1.2s .7s both; }
+    .kicker { animation: up .9s .35s cubic-bezier(.2, .7, .2, 1) both; }
+    .title  { animation: up 1s .5s cubic-bezier(.2, .7, .2, 1) both; }
+    .meta, .actions { animation: up .9s .7s cubic-bezier(.2, .7, .2, 1) both; }
+  }
+  @keyframes rise-in { from { opacity: 0; transform: translateY(14px) scale(1.015); } to { opacity: 1; transform: none; } }
+  @keyframes up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .swap { transition: none; }
+    .cert.is-stamping .seal { animation: none; }
+  }
+
+  /* ---------- wider screens ---------- */
+  @media (min-width: 860px) {
+    .concept .wrap { grid-template-columns: 1fr 1.05fr; gap: 72px; }
+    .lede { max-width: 30em; }
+    .cert { padding: 52px 44px 46px; }
+  }
+  @media (max-width: 380px) {
+    .cert { padding: 40px 24px 34px; }
+    .seal { right: -50px; width: 52px; height: 52px; margin-top: -26px; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <!-- 1. 포스터 -->
+  <header class="hero" id="top">
+    <div class="art">
+      <picture>
+        <source srcset="assets/hero-art.webp" type="image/webp">
+        <img src="assets/hero-art.jpg" width="1024" height="1214" fetchpriority="high"
+             alt="원반을 머리 위로 들어 올린 황금 여신상 트로피 뒤로 SELF YEAR AWARDS 입체 글자가 펼쳐진 포스터 그림">
+      </picture>
+      <p class="vlabel" aria-hidden="true">
+        <span>2026</span><i class="bar"></i><span>상상마당</span><i class="line"></i><span>올해 나에게 주는 상</span>
+      </p>
+    </div>
+    <div class="hero-text">
+      <p class="kicker">2026 나에게 내가 주는 상</p>
+      <h1 class="title">
+        <span class="sr-only">셀프 시상식</span>
+        <img src="assets/title.svg" width="721" height="140" alt="" aria-hidden="true">
+      </h1>
+      <p class="meta"><span class="tbd">일정 추후 안내</span><span>KT&amp;G 상상마당 부산</span></p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#info">행사 안내 보기</a>
+        <a class="btn btn-line" href="#about">어떤 시상식인가요?</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. 소개 + 상장 -->
+  <section class="section concept" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div>
+        <div class="ornament" aria-hidden="true"><b></b></div>
+        <h2 class="h2" id="about-title">올해의 나에게,<br>내가 직접 상을 줍니다</h2>
+        <p class="lede">누가 알아주지 않아도 묵묵히 해낸 일, 처음으로 용기 낸 순간, 끝까지 버텨 낸 하루.
+           <strong>셀프 시상식</strong>은 2026년을 돌아보며 나에게 꼭 맞는 상을 정하고, 스스로에게 건네는 연말 시상식입니다.</p>
+        <p class="lede">상 이름은 정해져 있지 않아요. 올해의 나를 가장 잘 말해 주는 이름이면 충분합니다.</p>
+      </div>
+
+      <div class="cert-stage">
+        <article class="cert" aria-live="polite" aria-label="상장 예시">
+          <p class="cert-no swap">제 2026-<span data-k="no">01</span>호</p>
+          <p class="cert-head">상장</p>
+          <p class="cert-award swap" data-k="award">올해의 버팀상</p>
+          <p class="cert-name"><span>성명</span><span>나</span></p>
+          <p class="cert-body swap">위 사람은 2026년 한 해 동안 <span data-k="reason">힘든 날에도 끝까지 버텨 내며 하루하루를 살아냈으므로</span> 스스로에게 이&nbsp;상장을 수여합니다.</p>
+          <p class="cert-date">2026년 12월</p>
+          <p class="cert-giver"><small>셀프 시상식</small>수여자 나
+            <svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
+              <defs>
+                <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+                  <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="11" result="n"/>
+                  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 2" result="holes"/>
+                  <feComposite in="SourceGraphic" in2="holes" operator="in" result="speckle"/>
+                  <feDisplacementMap in="speckle" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+              </defs>
+              <g filter="url(#ink)" fill="#c63b2e">
+                <circle cx="50" cy="50" r="44" fill="none" stroke="#c63b2e" stroke-width="5.5"/>
+                <text x="50" y="47" text-anchor="middle" font-family="Nanum Myeongjo, serif" font-weight="800" font-size="27" letter-spacing="1">셀프</text>
+                <text x="50" y="77" text-anchor="middle" font-family="Nanum Myeongjo, serif" font-weight="800" font-size="27" letter-spacing="1">시상</text>
+              </g>
+            </svg>
+          </p>
+        </article>
+        <button class="btn btn-line shuffle" type="button" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.6-4.5M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.6 4.5M20 20v-4h-4"/></svg>
+          다른 상 보기
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 행사 안내 -->
+  <section class="section info" id="info" aria-labelledby="info-title">
+    <div class="wrap">
+      <div class="ornament" aria-hidden="true"><b></b></div>
+      <h2 class="h2" id="info-title">행사 안내</h2>
+      <div class="invite">
+        <dl class="facts">
+          <div class="fact"><dt>일시</dt><dd class="tbd">추후 안내</dd></div>
+          <div class="fact"><dt>장소</dt><dd>KT&amp;G 상상마당 부산<a class="map" href="https://map.naver.com/p/search/KT%26G%20%EC%83%81%EC%83%81%EB%A7%88%EB%8B%B9%20%EB%B6%80%EC%82%B0" target="_blank" rel="noopener">지도 보기</a></dd></div>
+          <div class="fact"><dt>대상</dt><dd class="tbd">추후 안내</dd></div>
+          <div class="fact"><dt>참가비</dt><dd class="tbd">추후 안내</dd></div>
+          <div class="fact"><dt>문의</dt><dd class="tbd">추후 안내</dd></div>
+        </dl>
+        <!-- 신청 링크가 생기면: <a class="btn btn-gold" id="apply" href="신청주소" target="_blank" rel="noopener">참가 신청하기</a> -->
+        <p class="btn btn-soon" id="apply">신청 오픈 예정</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="closing">올해 가장 애쓴 사람에게<br><em>상을 줄 차례</em>입니다</p>
+  <div class="logos">
+    <img class="ktng" src="assets/logo-ktng.png" width="520" height="210" alt="KT&amp;G">
+    <img class="cd" src="assets/logo-cd.png" width="620" height="130" alt="콘텐츠개발원">
+  </div>
+  <p class="fine">© 2026 셀프 시상식 · <a href="assets/poster.jpg" target="_blank" rel="noopener">포스터 원본 보기</a></p>
+</footer>
+
+<script>
+  (function () {
+    var awards = [
+      ['올해의 버팀상', '힘든 날에도 끝까지 버텨 내며 하루하루를 살아냈으므로'],
+      ['첫걸음 신인상', '두려움을 딛고 처음으로 새로운 일에 도전하였으므로'],
+      ['꾸준함 대상', '작은 일이라도 하루도 빠짐없이 이어 왔으므로'],
+      ['나를 돌본 공로상', '바쁜 날들 속에서도 나를 아끼는 법을 배웠으므로'],
+      ['다시 일어섬상', '넘어진 자리에서 다시 일어나 한 걸음을 내디뎠으므로'],
+      ['곁을 지킨 우정상', '소중한 사람들의 곁을 따뜻하게 지켜 주었으므로']
+    ];
+    var cert = document.querySelector('.cert');
+    var btn = document.querySelector('.shuffle');
+    if (!cert || !btn) return;
+    var slot = {};
+    cert.querySelectorAll('[data-k]').forEach(function (el) { slot[el.getAttribute('data-k')] = el; });
+    var i = 0, busy = false;
+    var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      if (busy) return;
+      busy = true;
+      i = (i + 1) % awards.length;
+      cert.classList.remove('is-stamping');
+      cert.classList.add('is-changing');
+      setTimeout(function () {
+        slot.award.textContent = awards[i][0];
+        slot.reason.textContent = awards[i][1];
+        slot.no.textContent = String(i + 1).padStart(2, '0');
+        cert.classList.remove('is-changing');
+        void cert.offsetWidth;
+        cert.classList.add('is-stamping');
+        busy = false;
+      }, still ? 0 : 280);
+    });
+  })();
+</script>
+</body>
+</html>
